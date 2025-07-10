@@ -4,7 +4,7 @@ import json
 from dotenv import load_dotenv
 from sample import mock_schemas
 
-Client = OpenAI(api_key='')
+# Client = OpenAI(api_key='')
 
 json_schema = mock_schemas[1]
 
