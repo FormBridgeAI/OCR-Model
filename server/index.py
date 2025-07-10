@@ -3,10 +3,12 @@ from openai import OpenAI
 import json
 from dotenv import load_dotenv
 from sample import mock_schemas
-
+load_dotenv()
 
 
 json_schema = mock_schemas[1]
+api_key = os.getenv('OPENAI_API_KEY')
+Client = OpenAI(api_key=api_key)
 
 def scheme_response(schema):
     messages = [{
